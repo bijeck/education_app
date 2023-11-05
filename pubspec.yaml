@@ -33,6 +33,7 @@ dependencies:
   url_launcher: ^6.1.12
   youtube_metadata: ^1.0.1
   video_thumbnail: ^0.5.3
+  hive: ^2.2.3
 
 dev_dependencies:
   flutter_test:
