@@ -8,11 +8,11 @@ import 'package:mocktail/mocktail.dart';
 import 'on_boarding_repo.mock.dart';
 
 void main() {
-  late CachFirstTime usecase;
+  late CacheFirstTime usecase;
   late OnBoardingRepo repo;
   setUp(() {
     repo = MockOnBoardingRepo();
-    usecase = CachFirstTime(repo);
+    usecase = CacheFirstTime(repo);
   });
 
   test(
