@@ -1,5 +1,6 @@
 import 'package:education_app/core/errors/exceptions.dart';
 import 'package:hive/hive.dart';
+import 'package:injectable/injectable.dart';
 
 abstract class OnBoardingLocalDatasource {
   Future<void> cacheFirstTimer();
@@ -10,6 +11,7 @@ abstract class OnBoardingLocalDatasource {
 const kFirstTimerKey = 'first_timer';
 const String cachedBox = 'CachedBox';
 
+@LazySingleton(as: OnBoardingLocalDatasource)
 class OnBoardingLocalDatasourceImpl extends OnBoardingLocalDatasource {
   OnBoardingLocalDatasourceImpl(this.hive);
   final HiveInterface hive;

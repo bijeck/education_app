@@ -1,9 +1,14 @@
 import 'package:education_app/core/res/colours.dart';
 import 'package:education_app/core/res/fonts.dart';
+import 'package:education_app/core/services/injections.dart';
 import 'package:education_app/core/services/router.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies();
+  await Hive.initFlutter();
   runApp(const MyApp());
 }
 

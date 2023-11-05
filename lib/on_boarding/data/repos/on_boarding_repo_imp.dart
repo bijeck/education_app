@@ -4,7 +4,9 @@ import 'package:education_app/core/errors/failure.dart';
 import 'package:education_app/core/utils/typedefs.dart';
 import 'package:education_app/on_boarding/data/datasources/on_boarding_local_datasources.dart';
 import 'package:education_app/on_boarding/domain/repos/on_boarding_repo.dart';
+import 'package:injectable/injectable.dart';
 
+@LazySingleton(as: OnBoardingRepo)
 class OnBoardingRepoImpl extends OnBoardingRepo {
   OnBoardingRepoImpl(this._datasource);
 
