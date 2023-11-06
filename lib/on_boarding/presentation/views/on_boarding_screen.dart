@@ -36,7 +36,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         child: BlocConsumer<OnBoardingCubit, OnBoardingState>(
           listener: (context, state) {
             if (state is OnBoardingStatus && !state.isFirstTimer) {
-              Navigator.pushReplacementNamed(context, '/home');
+              // Navigator.pushReplacementNamed(context, '/home');
             } else if (state is UserCached) {
               // TODO(User-Cached-Handler): Push to the appropriate screen
             }
@@ -57,7 +57,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   ],
                 ),
                 Align(
-                  alignment: const Alignment(0, .04),
+                  alignment: const Alignment(0, .06),
                   child: SmoothPageIndicator(
                     controller: pageController,
                     count: 3,
@@ -73,7 +73,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       dotWidth: 10,
                       spacing: 40,
                       activeDotColor: Colours.primaryColour,
-                      dotColor: Colors.white,
+                      dotColor: Color.fromARGB(255, 248, 207, 221),
                     ),
                   ),
                 ),
