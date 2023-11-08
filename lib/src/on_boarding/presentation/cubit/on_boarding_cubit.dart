@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:education_app/on_boarding/domain/usecases/cache_first_time.dart';
-import 'package:education_app/on_boarding/domain/usecases/check_if_user_is_first_timer.dart';
+import 'package:education_app/src/on_boarding/domain/usecases/cache_first_time.dart';
+import 'package:education_app/src/on_boarding/domain/usecases/check_if_user_is_first_timer.dart';
 import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
 

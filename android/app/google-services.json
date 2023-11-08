@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "379654014460",
+    "project_id": "education-app-396c4",
+    "storage_bucket": "education-app-396c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379654014460:android:9772cf5857025a7974de79",
+        "android_client_info": {
+          "package_name": "com.bijeck.education_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOSSVAI5MsWoAjI7MNpDPaEkUYl1asTXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379654014460:android:609c37cd1e98345b74de79",
+        "android_client_info": {
+          "package_name": "com.example.education_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOSSVAI5MsWoAjI7MNpDPaEkUYl1asTXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:education_app/core/errors/failure.dart';
-import 'package:education_app/on_boarding/domain/repos/on_boarding_repo.dart';
-import 'package:education_app/on_boarding/domain/usecases/cache_first_time.dart';
+import 'package:education_app/src/on_boarding/domain/repos/on_boarding_repo.dart';
+import 'package:education_app/src/on_boarding/domain/usecases/cache_first_time.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

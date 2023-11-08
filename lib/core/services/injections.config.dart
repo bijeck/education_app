@@ -9,17 +9,17 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:education_app/core/services/module.dart' as _i10;
-import 'package:education_app/on_boarding/data/datasources/on_boarding_local_datasources.dart'
+import 'package:education_app/src/on_boarding/data/datasources/on_boarding_local_datasources.dart'
     as _i4;
-import 'package:education_app/on_boarding/data/repos/on_boarding_repo_imp.dart'
+import 'package:education_app/src/on_boarding/data/repos/on_boarding_repo_imp.dart'
     as _i6;
-import 'package:education_app/on_boarding/domain/repos/on_boarding_repo.dart'
+import 'package:education_app/src/on_boarding/domain/repos/on_boarding_repo.dart'
     as _i5;
-import 'package:education_app/on_boarding/domain/usecases/cache_first_time.dart'
+import 'package:education_app/src/on_boarding/domain/usecases/cache_first_time.dart'
     as _i7;
-import 'package:education_app/on_boarding/domain/usecases/check_if_user_is_first_timer.dart'
+import 'package:education_app/src/on_boarding/domain/usecases/check_if_user_is_first_timer.dart'
     as _i8;
-import 'package:education_app/on_boarding/presentation/cubit/on_boarding_cubit.dart'
+import 'package:education_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart'
     as _i9;
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:hive/hive.dart' as _i3;
