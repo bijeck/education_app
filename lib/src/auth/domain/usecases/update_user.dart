@@ -3,7 +3,9 @@ import 'package:education_app/core/usecases/usecases.dart';
 import 'package:education_app/core/utils/typedefs.dart';
 import 'package:education_app/src/auth/domain/repos/auth_repo.dart';
 import 'package:equatable/equatable.dart';
+import 'package:injectable/injectable.dart';
 
+@LazySingleton()
 class UpdateUser extends UsecaseWithParams<void, UpdateUserParams> {
   const UpdateUser(this._repo);
 

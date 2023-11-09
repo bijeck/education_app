@@ -3,7 +3,9 @@ import 'package:education_app/core/utils/typedefs.dart';
 import 'package:education_app/src/auth/domain/entities/user.dart';
 import 'package:education_app/src/auth/domain/repos/auth_repo.dart';
 import 'package:equatable/equatable.dart';
+import 'package:injectable/injectable.dart';
 
+@LazySingleton()
 class SignIn extends UsecaseWithParams<LocalUser, SignInParams> {
   const SignIn(this._repo);
 

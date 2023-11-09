@@ -10,6 +10,7 @@ import 'package:education_app/src/auth/data/models/user_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/widgets.dart';
+import 'package:injectable/injectable.dart';
 
 abstract class AuthRemoteDataSource {
   const AuthRemoteDataSource();
@@ -33,6 +34,7 @@ abstract class AuthRemoteDataSource {
   });
 }
 
+@LazySingleton(as: AuthRemoteDataSource)
 class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   const AuthRemoteDataSourceImpl({
     required FirebaseAuth authClient,
