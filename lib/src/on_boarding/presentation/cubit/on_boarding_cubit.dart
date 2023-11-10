@@ -5,7 +5,7 @@ import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
 
 part 'on_boarding_state.dart';
-@Injectable()
+@Injectable(scope: 'on_boarding')
 class OnBoardingCubit extends Cubit<OnBoardingState> {
   OnBoardingCubit({
     required CacheFirstTime cacheFirstTimer,

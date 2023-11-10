@@ -34,7 +34,7 @@ abstract class AuthRemoteDataSource {
   });
 }
 
-@LazySingleton(as: AuthRemoteDataSource)
+@LazySingleton(as: AuthRemoteDataSource, scope: 'auth')
 class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   const AuthRemoteDataSourceImpl({
     required FirebaseAuth authClient,

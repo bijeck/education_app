@@ -6,7 +6,7 @@ import 'package:education_app/src/on_boarding/data/datasources/on_boarding_local
 import 'package:education_app/src/on_boarding/domain/repos/on_boarding_repo.dart';
 import 'package:injectable/injectable.dart';
 
-@LazySingleton(as: OnBoardingRepo)
+@LazySingleton(as: OnBoardingRepo, scope: 'on_boarding')
 class OnBoardingRepoImpl extends OnBoardingRepo {
   OnBoardingRepoImpl(this._datasource);
 

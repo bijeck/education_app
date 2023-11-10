@@ -5,7 +5,7 @@ import 'package:education_app/src/auth/domain/repos/auth_repo.dart';
 import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
 
-@LazySingleton()
+@LazySingleton(scope: 'auth')
 class SignIn extends UsecaseWithParams<LocalUser, SignInParams> {
   const SignIn(this._repo);
 

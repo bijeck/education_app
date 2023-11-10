@@ -3,7 +3,7 @@ import 'package:education_app/core/utils/typedefs.dart';
 import 'package:education_app/src/auth/domain/repos/auth_repo.dart';
 import 'package:injectable/injectable.dart';
 
-@LazySingleton()
+@LazySingleton(scope: 'auth')
 class ForgotPassword extends UsecaseWithParams<void, String> {
   const ForgotPassword(this._repo);
 

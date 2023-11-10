@@ -11,7 +11,7 @@ abstract class OnBoardingLocalDatasource {
 const kFirstTimerKey = 'first_timer';
 const String cachedBox = 'CachedBox';
 
-@LazySingleton(as: OnBoardingLocalDatasource)
+@LazySingleton(as: OnBoardingLocalDatasource, scope: 'on_boarding')
 class OnBoardingLocalDatasourceImpl extends OnBoardingLocalDatasource {
   OnBoardingLocalDatasourceImpl(this.hive);
   final HiveInterface hive;

@@ -8,7 +8,7 @@ import 'package:education_app/src/auth/domain/entities/user.dart';
 import 'package:education_app/src/auth/domain/repos/auth_repo.dart';
 import 'package:injectable/injectable.dart';
 
-@LazySingleton(as: AuthRepo)
+@LazySingleton(as: AuthRepo, scope: 'auth')
 class AuthRepoImpl implements AuthRepo {
   const AuthRepoImpl(this._remoteDataSource);
 

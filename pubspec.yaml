@@ -38,7 +38,7 @@ dependencies:
   hive_flutter: ^1.1.0
   firebase_core: ^2.21.0
   firebase_auth: ^4.12.1
-  cloud_firestore: ^4.12.2
+  cloud_firestore: ^4.13.0
   firebase_storage: ^11.4.1
   firebase_ui_auth: ^1.7.0
 
@@ -52,6 +52,10 @@ dev_dependencies:
   very_good_analysis: ^5.0.0+1
   injectable_generator: ^2.4.1
   build_runner: ^2.4.6
+  firebase_auth_mocks: ^0.13.0
+  google_sign_in_mocks: ^0.3.0
+  fake_cloud_firestore: ^2.4.3
+  firebase_storage_mocks: ^0.6.1
 
 flutter:
   uses-material-design: true
