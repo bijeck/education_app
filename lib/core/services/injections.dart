@@ -8,6 +8,6 @@ final getIt = GetIt.instance;
 Future<void> configureDependencies() async {
   getIt
     ..init()
-    ..initAuthScope()
-    ..initOn_boardingScope();
+    ..initAuthScope();
+  await getIt.initOn_boardingScope();
 }
