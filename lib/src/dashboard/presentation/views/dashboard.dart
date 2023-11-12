@@ -1,3 +1,4 @@
+import 'package:education_app/core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -7,6 +8,15 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Center(
+        child: Text(
+          'Dashboard',
+          style: context.theme.textTheme.bodyMedium!.copyWith(
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
   }
 }
