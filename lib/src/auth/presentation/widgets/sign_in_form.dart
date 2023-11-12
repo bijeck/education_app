@@ -1,4 +1,5 @@
 import 'package:education_app/core/common/widgets/i_field.dart';
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
@@ -29,6 +30,12 @@ class _SignInFormState extends State<SignInForm> {
         children: [
           IField(
             controller: widget.emailController,
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'This field is required';
+              }
+              return EmailValidator.validate(value) ? null : 'Invalid Email';
+            },
             hintText: 'Email Address',
             keyboardType: TextInputType.emailAddress,
           ),
