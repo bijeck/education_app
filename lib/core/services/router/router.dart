@@ -1,6 +1,6 @@
 import 'package:education_app/core/common/views/page_under_construction.dart';
 import 'package:education_app/core/extensions/context_extension.dart';
-import 'package:education_app/core/services/injections.dart';
+import 'package:education_app/core/services/injections/injections.dart';
 import 'package:education_app/src/auth/data/models/user_model.dart';
 import 'package:education_app/src/auth/presentation/bloc/auth_bloc.dart';
 import 'package:education_app/src/auth/presentation/views/sign_in_screen.dart';

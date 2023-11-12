@@ -9,7 +9,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:cloud_firestore/cloud_firestore.dart' as _i4;
-import 'package:education_app/core/services/module.dart' as _i21;
+import 'package:education_app/core/services/injections/module.dart' as _i21;
 import 'package:education_app/src/auth/data/datasources/auth_remote_data_source.dart'
     as _i6;
 import 'package:education_app/src/auth/data/repos/auth_repo_impl.dart' as _i8;
