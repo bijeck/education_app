@@ -4,6 +4,7 @@ import 'package:education_app/core/res/fonts.dart';
 import 'package:education_app/core/services/firebase/firebase_options.dart';
 import 'package:education_app/core/services/injections/injections.dart';
 import 'package:education_app/core/services/router/router.dart';
+import 'package:education_app/src/dashboard/providers/dashboard_controller.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -24,8 +25,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => UserProvider(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => UserProvider()),
+        ChangeNotifierProvider(create: (_) => DashboardController()),
+      ],
       child: MaterialApp(
         title: 'Education App',
         theme: ThemeData(
