@@ -16,6 +16,10 @@ class TabNavigator extends ChangeNotifier {
     if (_navigationStack.length > 1) _navigationStack.removeLast();
     notifyListeners();
   }
+  void push(TabItem page) {
+   _navigationStack.add(page);
+    notifyListeners();
+  }
 
   void popToRoot() {
     _navigationStack
